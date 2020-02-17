@@ -1,0 +1,18 @@
+<div class="container w-50 card mt-5 p-4">
+  <form class="ui form" #form="ngForm" (ngSubmit)="login(form)">
+    <h2 class="ui dividing header">Login</h2>
+    <div class="field">
+      <label>Username</label>
+      <div class="field">
+        <input ngModel #username="ngModel" type="text" name="username" placeholder="UserName">
+      </div>
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <div class="field">
+        <input ngModel #password="ngModel" type="text" name="password" placeholder="Password">
+      </div>
+    </div>
+    <button class="ui button">Submit</button>
+  </form>
+</div>

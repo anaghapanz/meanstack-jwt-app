@@ -1,0 +1,32 @@
+<div class="container w-50 card mt-5 p-4">
+  <form class="ui form" #form="ngForm" (ngSubmit)="register(form)">
+    <h4 class="ui dividing header">Register</h4>
+    <div class="field">
+      <label>Username</label>
+      <div class="two fields">
+
+        <div class="field">
+          <input ngModel #username="ngModel" type="text" name="username" placeholder="UserName">
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label>Credentials</label>
+      <div class="two fields">
+        <div class="field">
+          <input ngModel #email="ngModel" type="text" name="email" placeholder="Email">
+        </div>
+        <div class="field">
+          <input ngModel #phone="ngModel" type="text" name="phone" placeholder="Phone Number">
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <div class="field">
+        <input ngModel #password="ngModel" type="text" name="password" placeholder="Password">
+      </div>
+    </div>
+    <button class="ui button">Submit</button>
+  </form>
+</div>
